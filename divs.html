@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<header>
+	<style>
+		#mainnav { 
+			text-align:center;
+			font-size: 2em;	
+			
+		}
+			
+		#mainnav a {
+			border: 1px dotted black;
+			margin: 0px;
+			padding: 10px;
+			background-color: lightyellow;
+			color: black;
+			text-decoration: none;
+		}
+		
+		#flex {
+			width: 200px;
+			height: 200px;
+			border: 1px solid #c3c3c3;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		#flex div {
+			width: 50px;
+			height: 50px;
+		}
+		
+	</style>
+	</header>
+	<body>
+	
+		<nav id="mainnav" title="nav element mit css styling mit links auf selbsterstellte seiten, gepunkteter rahmen, schriftgröße 2em, kein margin, 10px padding, hellgelber hintergrund">
+			<a href="index.html">Startseite</a><a href="divs.html">Divs</a><a href="sonstiges.html">Sonstiges</a>
+		</nav>
+		
+		<h1 title="h1">Divs</h1>
+		
+		<p title="p tag">display flex</p>
+		
+		<div id="flex" title="200px x 200x, Rahmenfarbe c3c3c3, flex box mit flex-wrap, elemente sind einzelne divs">
+			<div style="background-color:coral;" title="50x50, farbe coral">A</div>
+			<div style="background-color:lightblue;" title="50x50, farbe lightblue">B</div>
+			<div style="background-color:khaki;" title="50x50, farbe khaki">C</div>
+			<div style="background-color:pink;" title="50x50, farbe pink">D</div>
+			<div style="background-color:lightgrey;" title="50x50, farbe lightgrey">E</div>
+			<div style="background-color:lightgreen;" title="50x50, farbe lightgreen">F</div>
+		</div>
+		
+		<p title="p tag">selbe divs, aber ohne flex:</p>
+		
+		<div title="">
+			<div style="background-color:coral;" title="50x50, farbe coral">A</div>
+			<div style="background-color:lightblue;" title="50x50, farbe lightblue">B</div>
+			<div style="background-color:khaki;" title="50x50, farbe khaki">C</div>
+			<div style="background-color:pink;" title="50x50, farbe pink">D</div>
+			<div style="background-color:lightgrey;" title="50x50, farbe lightgrey">E</div>
+			<div style="background-color:lightgreen;" title="50x50, farbe lightgreen">F</div>
+		</div>
+		
+	</body>
+</html>
