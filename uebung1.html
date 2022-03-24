@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Übung 1</title>
+    <style>
+        #mainnav {
+            text-align:center;
+            font-size: 2em;
+
+        }
+
+        #mainnav a {
+            border: 1px dotted black;
+            margin: 0px;
+            padding: 10px;
+            background-color: lightyellow;
+            color: black;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #c6ecd9;
+
+        }
+
+        h1 {
+            color: white;
+        }
+
+        #instagramaccounts {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #instagramaccounts tr {
+            background-color: #66cc99;
+            height: 100px;
+        }
+
+        #instagramaccounts tr:nth-child(odd) {
+            background-color: #9fdfbf;
+        }
+
+        #instagramaccounts tr:nth-child(1) {
+            height: 50px;
+        }
+
+        #instagramaccounts td {
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        #instagramaccounts td:nth-child(1) {
+            font-weight: bold;
+        }
+
+        #instagramaccounts th {
+            background-color: #339966;
+            color: white;
+        }
+
+        .button {
+            color: #339966;
+            font-weight: bold;
+            border: 1px solid #339966;
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="mainnav" title="nav element mit css styling mit links auf selbsterstellte seiten, gepunkteter rahmen, schriftgröße 2em, kein margin, 10px padding, hellgelber hintergrund">
+        <a href="index.html">Startseite</a><a href="divs.html">Divs</a><a href="sonstiges.html">Sonstiges</a><a href="ergaenzung.html">Ergänzung</a><a href="uebung1.html">Übung 1</a>
+    </nav>
+
+    <h1>Beliebteste Instagram Accounts</h1>
+
+    <table id="instagramaccounts">
+        <tr class="headerrow">
+            <th>Name</th>
+            <th>Anzahl der Follower in Millionen</th>
+            <th>abonniert</th>
+        </tr>
+        <tr><td>Instagram</td><td>283,35</td><td>nein</td></tr>
+        <tr><td>Christiano Ronaldo</td><td>156,85</td><td>nein</td></tr>
+        <tr><td>Ariana Grande</td><td>147,26</td><td>ja</td></tr>
+        <tr><td>Selena Gomez</td><td>146,65</td><td>nein</td></tr>
+        <tr><td>therock</td><td>133,83</td><td>ja</td></tr>
+        <tr><td>Kim Kardashian West</td><td>129,76</td><td>nein</td></tr>
+    </table>
+    <p>Quelle: <a class="button" href="https://de.statista.com/statistik/daten/studie/427067/umfrage/top-10-instagram-accounts-mit-den-meisten-followern-weltweit/" target="_blank">statista.com</a></p>
+</body>
+</html>
