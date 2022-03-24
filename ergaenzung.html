@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1. Informatikschularbeit - Ergänzung</title>
+
+    <style>
+        #mainnav {
+            text-align:center;
+            font-size: 2em;
+
+        }
+
+        #mainnav a {
+            border: 1px dotted black;
+            margin: 0px;
+            padding: 10px;
+            background-color: lightyellow;
+            color: black;
+            text-decoration: none;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 190px;
+            height: 190px;
+        }
+
+        .flex-container > div {
+            background-color: #D8F3C1FF;
+            text-align: center;
+            width:50px;
+            height:50px;
+            font-size: 15px;
+        }
+
+        .left {
+            border-left: 10px solid DodgerBlue;
+        }
+
+        .top {
+            border-top: 10px solid DodgerBlue;
+        }
+
+        .right {
+            border-right: 10px solid DodgerBlue;
+        }
+
+        .bottom {
+            border-bottom: 10px solid DodgerBlue;
+        }
+
+        .outer-div {
+            border: 2px solid purple;
+            width: 300px;
+            height: 200px;
+        }
+        .inner-div {
+            border: 2px solid green;
+            margin: 20px;
+            padding-left: 20px;
+            padding-right: 50px;
+        }
+
+        #customers {
+            font-family: Arial;
+            width: 400px;
+        }
+
+        #customers td, #customers th {
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        </style>
+</head>
+<body>
+
+    <nav id="mainnav" title="nav element mit css styling mit links auf selbsterstellte seiten, gepunkteter rahmen, schriftgröße 2em, kein margin, 10px padding, hellgelber hintergrund">
+        <a href="index.html">Startseite</a><a href="divs.html">Divs</a><a href="sonstiges.html">Sonstiges</a><a href="ergaenzung.html">Ergänzung</a>
+    </nav>
+
+    <h1 title="h1">Ergänzung</h1>
+
+    <h2 title="h2, nachfolgend ein flex container mit wrap, 190x190 pixel, keine hintergrundfarbe, keine border" id="container">Flex Container</h2>
+    <div class="flex-container" title="">
+        <div class="left top" title="div 1: rahmen 10px DodgerBlue, links und oben">1</div>
+        <div class="left top" title="div 2: rahmen 10px DodgerBlue, links und oben">2</div>
+        <div class="left top right" title="div 3: rahmen 10px DodgerBlue, links und oben und rechts">3</div>
+        <div class="left top" title="div 4: rahmen 10px DodgerBlue, links und oben">4</div>
+        <div class="left top" title="div 5: rahmen 10px DodgerBlue, links und oben">5</div>
+        <div class="left top right" title="div 6: rahmen 10px DodgerBlue, links und oben und rechts">6</div>
+        <div class="left top bottom" title="div 7: rahmen 10px DodgerBlue, links und oben und unten">7</div>
+        <div class="left top bottom" title="div 8: rahmen 10px DodgerBlue, links und oben und unten">8</div>
+        <div class="left top bottom right" title="div 9: rahmen 10px DodgerBlue, links und oben und unten und rechts">9</div>
+    </div>
+
+    <h2 title="h2" id="margin">Margin/Padding</h2>
+
+    <div class="outer-div">
+        <div class="inner-div">
+            20 px margin und 20 px padding von links. aber 50 px padding von rechts.
+        </div>
+    </div>
+
+    <h2 title="h2" id="gestreifte">Gestreifte Tabellen</h2>
+
+    <table id="customers" title="400px breit, font Arial, für alle nicht header zellen:border farbe ddd, 1px, 8px padding, jede gerade zeile hintergrund f2f2f2, header zellen: padding oben und unten: 12px, zentriert, hintergrund: #04AA6D; text farbe weiß, alle border radien 25px">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>Michael</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>Markus</td>
+            <td>Sweden</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Peter</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+
+    <h2 title="h2">Links</h2>
+
+    <ul>
+        <li><a href="https://google.com">externer link</a></li>
+        <li><a href="https://google.com" target="_blank">externer link, neuer tab</a></li>
+        <li>interne links: <a href="#container">container</a>, <a href="#margin">margin</a>, <a href="#gestreifte">gestreifte Tabellen</a></li>
+    </ul>
+
+</body>
+</html>
